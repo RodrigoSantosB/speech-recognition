@@ -49,7 +49,7 @@ Certifique-se de adicionar uma pasta dentro da pasta do projeto que contenha mú
 cd workspace
 
 # clonar repositório em workspace: [ex: C:\Users\seu-user\workspace
-git clone https://github.com/RodrigoSantosB/speech-recognition/tree/main
+git clone https://github.com/RodrigoSantosB/speech-recognition-signal-project.git
 
 # criar ambinte virtual em python 3.10.11
 python -m venv "nome-do-ambiente"
