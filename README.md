@@ -14,7 +14,9 @@ A extração acontence da seguinte maneira:
 ![MFCC_EXTRACTOR](https://github.com/RodrigoSantosB/speech-recognition/blob/main/images/mfcc_img.png)
 
 ## Layout CNN
-![CNN_ALGORITHM](https://github.com/RodrigoSantosB/speech-recognition/blob/main/images/cnn_estructure.png) ![CNN_TABLE](https://github.com/RodrigoSantosB/speech-recognition/blob/main/images/model_table.png)
+![CNN_ALGORITHM](https://github.com/RodrigoSantosB/speech-recognition/blob/main/images/cnn_estructure.png) 
+### A tabela abaixo mostra as configurações usadas para treinar a CNN, vale descatar que é possível personalizá-la com a finalidade de que a acurácia aumente.  
+![CNN_TABLE](https://github.com/RodrigoSantosB/speech-recognition/blob/main/images/model_table.png)
 
 
 ## Modelo conceitual
@@ -37,7 +39,8 @@ A extração acontence da seguinte maneira:
 # Como executar o projeto
 
 ## Preparando o ambiente
-Pré-requisitos: python 3.10.11
+#### Pré-requisitos: python 3.10.11. 
+Certifique-se de adicionar uma pasta dentro da pasta do projeto que contenha música.mp3, além disso troque no script `music.py` a string da variável `file_path = 'Foo-Fighters'` para o nome da sua pasta que contém as músicas
 ```bash
 ## OBS: se a versão global do python não estiver como padrão do sistema, coloque-a como padrão
 # Vá até a Áre de trabalho (Desktop), crie uma pasta chamada `workspace`
@@ -61,6 +64,24 @@ Linux:
 pip intall -r requirements.txt
 
 ```
+
+
+## Montando o circuito
+Pré-requisitos: Arduino UNO, Arduino IDE. O circuito em questão foi montado com a sequência de pinagem correspondente de 5-13, caso troque a sequência, é necessário fazer o ajuste no código `script.ino`.
+Além disso, os resistores utilizados foram de 330 ohms, uma alternativa é usar um potenciômetro com a resistência equivalente a 9 resistores em paralelo. Ademais 9 leds também foram usados, seque o esquema abaixo:
+
+![ARDUINO](https://github.com/RodrigoSantosB/speech-recognition/blob/main/images/circuito_ardu.png)
+
+```bash
+# Adicionar o código arduino na IDE arduiono
+
+# Baixar e instalar dependência pacote FFT do arduino 
+
+# Selecionar a COM_ID correspondente na qual a placa está conectada
+
+```
+
+
 ## Treinamento do modelo
 Primeiro, faça o download dos arquivos necessários para o treinamento da rede e extração de features:
 Certifique-se de que ele esteja no mesmo diretório em que o código esteja inserido, além disso atualize as variáveis de path para os paths correspondente de sua máquina 
@@ -79,23 +100,19 @@ NO LINUX
 # Executar o script .ipynb
 
 # executar o projeto
-./mvnw spring-boot:run
+./signal_and_systems_project.ipynb
+
+ou RUN ALL na célula do VSCODE
 ```
 
-## Montando o circuito
-Pré-requisitos: Arduino UNO, Arduino IDE
+## DEMONSTRAÇÃO
 
-```bash
-# 
-Adicionar o código arduino na IDE ardiono
+O modelo treinado prevê qual comando foi lido, então com base nele invoca o script que dá play na música e exibe isso no espéctro da frequência  por meio do arduino. 
 
-# Baixar e instalar dependência pacote FFT do arduino 
 
-# Selecionar a COM_ID correspondente na qual a placa está conectada
 
-# executar o projeto
+![DEMO](https://github.com/RodrigoSantosB/speech-recognition/blob/main/images/demonstracao_gif.gif)
 
-```
 
 # Autor
 
