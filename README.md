@@ -11,15 +11,14 @@ Inicialmente treina-se uma CNN obtendo amostras de audio com a mfcc ( Mel-freque
 A extração acontence da seguinte maneira:
 
 ## Layout mfcc
-![MFCC_EXTRACTOR](https://github.com/acenelio/assets/raw/main/sds1/mobile1.png) ![Mobile 2](https://github.com/acenelio/assets/raw/main/sds1/mobile2.png)
+![MFCC_EXTRACTOR](https://github.com/RodrigoSantosB/speech-recognition/blob/main/images/mfcc_img.png)
 
 ## Layout CNN
-![CNN_ALGORITHM](https://github.com/acenelio/assets/raw/main/sds1/web1.png)
+![CNN_ALGORITHM](https://github.com/RodrigoSantosB/speech-recognition/blob/main/images/cnn_estructure.png) ![CNN_TABLE](https://github.com/RodrigoSantosB/speech-recognition/blob/main/images/model_table.png)
 
-![Web 2](https://github.com/acenelio/assets/raw/main/sds1/web2.png)
 
 ## Modelo conceitual
-![Modelo Conceitual](https://github.com/acenelio/assets/raw/main/sds1/modelo-conceitual.png)
+![CONCEPT_MODEL](https://github.com/RodrigoSantosB/speech-recognition/blob/main/images/concept_model.png)
 
 # Tecnologias utilizadas
 ## Extração de Features
@@ -41,11 +40,13 @@ A extração acontence da seguinte maneira:
 Pré-requisitos: python 3.10.11
 ```bash
 ## OBS: se a versão global do python não estiver como padrão do sistema, coloque-a como padrão
-# clonar repositório em um workspace: [ex: C:\Users\seu-user\workspace
-git clone [repo]
+# Vá até a Áre de trabalho (Desktop), crie uma pasta chamada `workspace`
 
 # entrar na pasta do projeto
 cd workspace
+
+# clonar repositório em workspace: [ex: C:\Users\seu-user\workspace
+git clone https://github.com/RodrigoSantosB/speech-recognition/tree/main
 
 # criar ambinte virtual em python 3.10.11
 python -m venv "nome-do-ambiente"
@@ -61,7 +62,8 @@ pip intall -r requirements.txt
 
 ```
 ## Treinamento do modelo
-Primeiro, faça o download dos arquivos necessário para o treinamento da rede e extraçao de features:
+Primeiro, faça o download dos arquivos necessários para o treinamento da rede e extração de features:
+Certifique-se de que ele esteja no mesmo diretório em que o código esteja inserido, além disso atualize as variáveis de path para os paths correspondente de sua máquina 
 ```
 NO WINDOWS
 Invoke-WebRequest -Uri "http://storage.googleapis.com/download.tensorflow.org/data/mini_speech_commands.zip" -OutFile "mini_speech_commands.zip"
@@ -80,21 +82,19 @@ NO LINUX
 ./mvnw spring-boot:run
 ```
 
-## Front end web
-Pré-requisitos: npm / yarn
+## Montando o circuito
+Pré-requisitos: Arduino UNO, Arduino IDE
 
 ```bash
-# clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
+# 
+Adicionar o código arduino na IDE ardiono
 
-# entrar na pasta do projeto front end web
-cd front-web
+# Baixar e instalar dependência pacote FFT do arduino 
 
-# instalar dependências
-yarn install
+# Selecionar a COM_ID correspondente na qual a placa está conectada
 
 # executar o projeto
-yarn start
+
 ```
 
 # Autor
