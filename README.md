@@ -4,7 +4,7 @@
 # About The Project 
 
 Speech-recognition é uma aplicação contruida para reconhecer comandos chave por meio de uma CNN, na intenção de controlar um player de música e reproduzir os espéctros de frequências em uma sequência de leds
-no arduino aplincando a FFT (Fast Fourier Transform) em tempo real.
+no arduino aplicando a FFT (Fast Fourier Transform) em tempo real.
 
 A aplicação consiste em prever um comando escolhido para startar o player como: go-> inicia uma música; up-> troca para próxima música; down-> volta para música anterior e stop para a reprodução.
 Inicialmente treina-se uma CNN obtendo amostras de audio com a mfcc ( Mel-frequency cepstral coefficients ) em uma base de dados  [Mini Speech Commands](https://www.tensorflow.org/datasets/catalog/speech_commands?hl=pt-br)
