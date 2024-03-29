@@ -15,7 +15,7 @@ A extração acontence da seguinte maneira:
 
 ## Layout CNN
 ![CNN_ALGORITHM](https://github.com/RodrigoSantosB/speech-recognition/blob/main/images/cnn_estructure.png) 
-### A tabela abaixo mostra as configurações usadas para treinar a CNN, vale descatar que é possível personalizá-la com a finalidade de que a acurácia aumente.  
+### A tabela abaixo mostra as configurações usadas para treinar a CNN, vale destacar que é possível personalizá-la com a finalidade de que a acurácia aumente.  
 ![CNN_TABLE](https://github.com/RodrigoSantosB/speech-recognition/blob/main/images/model_table.png)
 
 
