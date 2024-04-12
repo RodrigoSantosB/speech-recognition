@@ -29,7 +29,7 @@ google-pasta==0.2.0
 grpcio==1.62.1
 h5py==3.10.0
 hdf5plugin==4.4.0
-idna==3.6
+idna==3.7
 ipykernel==6.29.3
 ipython==8.22.2
 iso8601==2.1.0
