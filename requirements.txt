@@ -121,5 +121,5 @@ tzdata==2024.1
 tzlocal==5.2
 urllib3==2.2.1
 wcwidth==0.2.13
-Werkzeug==3.0.1
+Werkzeug==3.0.3
 wrapt==1.16.0
