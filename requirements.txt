@@ -90,7 +90,7 @@ pywin32==306
 PyYAML==6.0.1
 pyzmq==25.1.2
 referencing==0.33.0
-requests==2.31.0
+requests==2.32.0
 requests-oauthlib==1.4.0
 rich==13.7.1
 rpds-py==0.18.0
