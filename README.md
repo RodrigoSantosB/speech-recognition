@@ -43,10 +43,11 @@ A extração acontence da seguinte maneira:
 Certifique-se de adicionar uma pasta dentro da pasta do projeto que contenha música.mp3, além disso troque no script `music.py` a string da variável `file_path = 'Foo-Fighters'` para o nome da sua pasta que contém as músicas
 ```bash
 ## OBS: se a versão global do python não estiver como padrão do sistema, coloque-a como padrão
-# Vá até a Áre de trabalho (Desktop), crie uma pasta chamada `workspace`
+# Vá até a Área de trabalho (Desktop), crie uma pasta chamada `workspace`
 
 # entrar na pasta do projeto
-cd workspace
+cd Desktop
+mkdir workspace && cd workspace
 
 # clonar repositório em workspace: [ex: C:\Users\seu-user\workspace
 git clone https://github.com/RodrigoSantosB/speech-recognition-signal-project.git
